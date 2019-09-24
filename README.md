@@ -1,5 +1,5 @@
 # PIG Workshop 1
-![](resouces/smith.png) Chase Smith
+![](resources/smith.png) Chase Smith
 
 
 ## WHAT IS PIG
