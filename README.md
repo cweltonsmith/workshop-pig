@@ -3,6 +3,10 @@
 
 ## WHAT IS PIG
 
+## Why Use PIG
+
+## PIG vs. HIVE
+
 ## PIG Example
 
 salesTable = LOAD 'myinput/purchases.txt' USING PigStorage('\t') AS (Date:chararray,Time:chararray,Location:chararray,Category:chararray,Amount:float,Payment:chararray);
