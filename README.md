@@ -33,14 +33,22 @@ Chase Smith
 
 ## PIG Example
 
+1. Make small purchases.txt
+ - cd udacity_training/data
+ - head -50 purchases.txt > test.txt
+ - hadoop fs -put test.txt myinput
 
-salesTable = LOAD 'myinput/purchases.txt' USING PigStorage('\t') AS (Date:chararray,Time:chararray,Location:chararray,Category:chararray,Amount:float,Payment:chararray);
-- This command loads the table into PIG.
-- PigStorage is the 
-- myinput is your input folder in hadoop
+2. Open Pig
+ - pig -x mapreduce
+ 
+3. Load data into a variable called salesTable (IGNORE warnings)
+ - salesTable = LOAD 'myinput/test.txt' USING PigStorage('\t') AS (Date:chararray,Time:chararray,Location:chararray,Category:chararray,Amount:float,Payment:chararray);
 
-group_data = GROUP salesTable BY Category;
+4. Group our data by columns
+ - group_data = GROUP salesTable BY Category;
 
-foreach_data = FOREACH group_data GENERATE CONCAT((chararray)$0,CONCAT(':',(chararray)COUNT($1)));
+5. Reduce the data
+ - foreach_data = FOREACH group_data GENERATE CONCAT((chararray)$0,CONCAT(':',(chararray)COUNT($1)));
 
-STORE foreach_data INTO 'pig_output' USING PigStorage('\t');
+6. Put our foreach_data into mapreduce
+ - STORE foreach_data INTO 'pig_output' USING PigStorage('\t');
