@@ -30,6 +30,9 @@ salesTable = LOAD 'myinput/purchases.txt' USING PigStorage('\t') AS (Date:charar
 - This command loads the table into PIG.
 - PigStorage is the 
 - myinput is your input folder in hadoop
-group_data = GROUP salesTable BY Category:
+
+group_data = GROUP salesTable BY Category;
+
 foreach_data = FOREACH group_data GENERATE CONCAT((chararray)$0,CONCAT(':',(chararray)COUNT($1)));
+
 STORE foreach_data INTO 'pig_output' USING PigStorage('\t');
