@@ -1,5 +1,5 @@
 # PIG Workshop 1
-![](resources/smith.png) ![](resources/LinkedIn.jpg) ![](resources/hart_profile.png =250x250)<br/>
+![](resources/smith.png) ![](resources/LinkedIn.jpg) <img src="resources/hart_profile.png" width="20%"><br/>
 &emsp;&emsp;&emsp; Chase Smith &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Kaleb Odle &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Kevin Hart
 
 ![](resources/Apache_Pig_Logo.png)
