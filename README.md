@@ -2,7 +2,7 @@
 ![](resources/smith.png) ![](resources/LinkedIn.jpg)<br/>
 &emsp;&emsp;&emsp; Chase Smith &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Kaleb Odle
 
-
+![](resources/Apache_Pig_Logo.png)
 ## WHAT IS PIG
 * Pig is an Abstraction over MapReduce.
 * Generally used with Hadoop.
