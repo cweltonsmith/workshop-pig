@@ -1,6 +1,6 @@
 # PIG Workshop 1
-![](resources/smith.png) 
-Chase Smith
+![](resources/smith.png) ![](resources/LinkedIn.jpg)<br/>
+&emsp;&emsp;&emsp; Chase Smith &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Kaleb Odle
 
 
 ## WHAT IS PIG
