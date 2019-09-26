@@ -39,7 +39,8 @@
 
     - `cd udacity_training/data`
     - `head -50 purchases.txt > test.txt`
-    - `hadoop fs -put test.txt myinput`
+    - `hadoop fs -mkdir pig_input`
+    - `hadoop fs -put test.txt pig_input`
 
 2. Open Pig
 
@@ -47,7 +48,7 @@
  
 3. Load data into a variable called salesTable (IGNORE warnings)
 
-    - `salesTable = LOAD 'myinput/test.txt' USING PigStorage('\t') AS (Date:chararray,Time:chararray,Location:chararray,Category:chararray,Amount:float,Payment:chararray);`
+    - `salesTable = LOAD 'pig_input/test.txt' USING PigStorage('\t') AS (Date:chararray,Time:chararray,Location:chararray,Category:chararray,Amount:float,Payment:chararray);`
 
 4. Group our data by columns
 
